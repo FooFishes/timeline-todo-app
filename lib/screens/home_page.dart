@@ -9,14 +9,14 @@ import 'package:timeline_todo_app/screens/timeline_page.dart';
 class HomePage extends GetView<HomeController> {
   HomePage({super.key});
   
-  List<Widget> pages = [
+  final List<Widget> pages = [
      RecentsPage(),
      TimelinePage(),
      AllPage(),
      SettingsPage(),
   ];
 
-  List<String> titles = [
+  final List<String> titles = [
     'Recents',
     'Timeline',
     'All',

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:timeline_todo_app/widgets/list.dart';
 
 class AllPage extends StatelessWidget {
   const AllPage({super.key});
@@ -9,8 +10,8 @@ class AllPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('All Page'),
       ),
-      body: const Center(
-        child: Text('This is All Page.'),
+      body: Center(
+        child: MyList(),
       ),
     );
   }

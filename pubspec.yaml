@@ -7,14 +7,27 @@ environment:
   sdk: ^3.7.2
 
 dependencies:
+  drift: ^2.26.0
+  drift_flutter: ^0.2.4
   flutter:
     sdk: flutter
+  flutter_secure_storage: ^9.2.4
   get: ^4.7.2
+  path_provider: ^2.1.5
+  freezed_annotation: ^2.3.2
+  json_annotation: ^4.8.0
+  uuid: ^4.5.1
+  intl: ^0.20.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  drift_dev: ^2.26.0
+  build_runner: ^2.4.15
+  json_serializable: 
+  freezed:
+
 
 flutter:
   uses-material-design: true
