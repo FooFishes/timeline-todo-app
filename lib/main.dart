@@ -54,7 +54,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:timeline_todo_app/bindings/add_event_binding.dart';
 import 'package:timeline_todo_app/bindings/initial_binding.dart';
+import 'package:timeline_todo_app/screens/add_event_screen.dart';
 import 'package:timeline_todo_app/screens/event_list_screen.dart';
 import 'package:timeline_todo_app/bindings/event_list_binding.dart'; // 引入页面的 Binding
 
@@ -89,6 +91,11 @@ class MyApp extends StatelessWidget {
           name: '/eventList',
           page: () => const EventListScreen(),
           binding: EventListBinding(), // 绑定此页面的 Controller
+        ),
+        GetPage(
+          name: '/addEvent', 
+          page: () => const AddEventScreen(),
+          binding: AddEventBinding(), // 绑定添加/编辑事件的 Controller
         ),
         // TODO: 添加其他页面的路由和绑定
         // GetPage(name: '/addEditEvent', page: () => AddEditEventScreen(), binding: AddEditEventBinding()),

@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:get/get.dart';
 import 'package:timeline_todo_app/models/event_model.dart';
 import 'package:timeline_todo_app/repositories/event_repository.dart';
+import 'package:timeline_todo_app/screens/add_event_screen.dart';
 
 class EventListController extends GetxController {
   // 依赖注入 Repository 接口
@@ -77,6 +78,7 @@ class EventListController extends GetxController {
     // Get.toNamed(AppRoutes.addEditEvent);
     // 或者直接导航
     // Get.to(() => AddEditEventScreen());
+    Get.toNamed('/addEvent'); // 使用 GetX 路由
     print("Navigate to Add Event Screen"); // Placeholder
      // 实际项目中会导航到 AddEditEventScreen
      // 导航后，如果添加成功，返回此页面时 Stream 会自动更新列表
